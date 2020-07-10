@@ -1,0 +1,27 @@
+#+TITLE: SommerSkriptum Info 5
+#+AUTHOR: Peter Ostertag
+#+DATE: Schuljahr 2019/20
+#+LATEX_HEADER: \usepackage[naustrian]{babel}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{--} 
+#+LANGUAGE: de
+#+OPTIONS: toc:nil ':t
+
+
+* Intro
+Liebe Quereinsteiger!
+
+Auf dieser Website möchte ich alle Infos versammeln, die man braucht, um in der 6. Klasse in Informatik einzusteigen!
+
+Ihr könnte mir jederzeit ein Email schicken, ich kann allerdings im Sommer nicht garantieren, dass die Antwort innerhalb eines Tages erfolgt. Aber baldmöglich!
+
+
+* HTML
+
+** Hilfewebseiten
+
+- [[https://selfhtml.org/][Selfhtml]]: dieses Nachschlagewerk dürfen wir auch im Unterricht, bei den Schularbeiten verwenden!
+- [[https://www.w3schools.com/][w3schools.com]]: das ist quasi die offizielle Hilfe. Hier gibt's auch die Möglichkeite, interaktiv etwas auszuprobieren!
+
+* Binärsystem
+
+* Anderes
