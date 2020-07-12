@@ -1,0 +1,42 @@
+#+TITLE: SommerSkriptum Info 5
+#+AUTHOR: Peter Ostertag
+#+DATE: Schuljahr 2019/20
+#+LATEX_HEADER: \usepackage[naustrian]{babel}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{--} 
+#+LANGUAGE: de
+#+OPTIONS: toc:nil ':t
+
+
+* Intro
+Liebe Quereinsteiger!
+
+Auf dieser Website möchte ich alle Infos versammeln, die man braucht, um in der 6. Klasse in Informatik einzusteigen!
+
+Ihr könnte mir jederzeit ein Email [[mail:ostertag.heinz@borgnonntal.at][ostertag.heinz@borgnonntal.at]] schicken, ich kann allerdings im Sommer nicht garantieren, dass die Antwort innerhalb eines Tages erfolgt. Aber baldmöglich!
+
+
+* HTML
+
+** Editoren
+Zum Schreiben von HTML (und anderen Programmiersprachen) braucht man einen "Editor". Davon gibt es viele, wir verwenden in der Schule die beiden folgenden:
+
+- [[https://notepad-plus-plus.org/][Notepad++]]: unser altes Modell, gut aber ohne Luxus
+- [[https://code.visualstudio.com/][Visual Studio Code]]: neues Modell: spielt alle Stückerln (Syntax Highlighting, automatische Vorschläge und Ergänzungen)
+
+Bei beiden ist wichtig, dass man schnell mit der Endung .html abspeichert, sonst weiß das Programm nicht, worum es geht und kann nicht helfen.
+
+** Skriptum
+
+Das Skriptum ist leider nicht vollständig, ich habe es nicht konsequent geschrieben.
+[[file:html.html][Zum Skriptum]]
+
+** Hilfewebseiten
+
+- [[https://selfhtml.org/][Selfhtml]]: dieses Nachschlagewerk dürfen wir auch im Unterricht, bei den Schularbeiten verwenden!
+- [[https://www.w3schools.com/][w3schools.com]]: das ist quasi die offizielle Hilfe. Hier gibt's auch die Möglichkeiten, interaktiv etwas auszuprobieren!
+
+* Binärsystem
+
+- [[file:Binaersystem.html][Skriptum]]: Kapitel Binärsystem
+
+* Anderes
