@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="Real"><br>
+    <input type="text" id="Imaginaer"><br>
+    <input type="button"
+    value="Zeichne"
+    onclick="zeichne()">
+
+    <canvas
+        id="Leinwand"
+        width="600"
+        height="400">
+    </canvas>
+
+    <script>
+        const c = document.getElementById("Leinwand");
+        const ctx = c.getContext("2d");
+       
+        var z1={Re:0.3,Im:1.4};
+        var z2={Re:0.4,Im:1.2};
+        
+        var cjulia;
+
+        function c_add(x,y)
+        {
+            return {Re:x.Re+y.Re,Im:x.Im+y.Im}
+        }
+       
+        function c_sub(x,y)
+        {
+            return {Re:x.Re-y.Re,Im:x.Im-y.Im}
+        }
+
+        function c_mult(x,y)
+        {
+            return {Re:(x.Re*y.Re-x.Im*y.Im),
+                    Im:(x.Re*y.Im+x.Im*y.Re)}
+        }
+
+        function c_sqr(x)
+        {
+            return c_mult(x,x);
+        }
+
+        function c_betrag(x)
+        {
+            return Math.sqrt(x.Re*x.Re+x.Im*x.Im);
+        }
+
+        function mandelformel(z,c) //f(z)=z²+c
+        {
+            return c_add(c_sqr(z),c);
+        }
+
+        function c_iter(z)
+        {
+            let x=z; //Startwert 0
+            for (let i=0;i<50;i++)  //50 Iterationen reichen
+            {
+                x=mandelformel(x,cjulia); //c ist fix!
+                if (c_betrag(x)>=2) return true; //Schleife abbrechen, wenn unendlich
+            }
+            return false; //falls Schleife nicht abgebrochen, return false
+        }
+
+
+        function zeichne()
+        {
+            cjulia={
+                Re:parseFloat(document.getElementById("Real").value),
+                Im:parseFloat(document.getElementById("Imaginaer").value)
+                };
+
+            //Doppelschleife über die Zeichenfläche
+            for (let i=0;i<600;i++)
+            {
+                for (let j=0;j<400;j++)
+                {
+                    if (c_iter({Re:i/200-1.5,Im:j/200-1}))
+                    ctx.fillStyle="white";
+                    else 
+                    ctx.fillStyle="black";
+                    ctx.fillRect(i,j,1,1);  //ein Pixel zeichnen
+                }
+            }
+
+        }
+
+            </script>
+
+</body>
+</html>
