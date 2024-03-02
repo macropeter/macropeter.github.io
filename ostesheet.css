@@ -6,11 +6,11 @@ body {background-color:beige;
 	  text-align:center;
 	  color:orange;}
 
-.einheit h1 {font-size:200%;
+section> h1 {font-size:200%;
 	    color:green;
 	    margin-left:20%;
 	    margin-right:20%;
 	    border-bottom: medium solid black;
 	    }
-.einheit p,ul {margin-left: 30%;}
+section> p,ul {margin-left: 30%;}
 
